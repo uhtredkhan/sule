@@ -1,0 +1,142 @@
+/* Responsive Design */
+
+/* Large Screens (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+
+/* Medium Screens (992px to 1199px) */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+}
+
+/* Tablet Screens (768px to 991px) */
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 var(--spacing-md);
+    }
+    
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Landscape (576px to 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 var(--spacing-md);
+    }
+    
+    .main-nav {
+        padding: var(--spacing-sm);
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-xl) 0;
+        transition: var(--transition-base);
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .hero {
+        padding: var(--spacing-lg);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Portrait (575px and below) */
+@media screen and (max-width: 575px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 var(--spacing-md);
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    
+    .hero-content {
+        padding: var(--spacing-md);
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-nav,
+    .hero,
+    .cta-buttons,
+    .social-links,
+    #theme-toggle {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    img {
+        max-width: 100% !important;
+    }
+    
+    @page {
+        margin: 2cm;
+    }
+} 

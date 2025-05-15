@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with me for web development projects and collaborations">
+    <meta name="keywords" content="contact, web developer, portfolio, hire">
+    <meta name="author" content="Your Name">
+    
+    <title>Contact Me | Portfolio</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p class="contact-intro">Have a project in mind or want to collaborate? I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.</p>
+            
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                placeholder="Your full name"
+                                aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                placeholder="your.email@example.com"
+                                aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="(123) 456-7890">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                required 
+                                placeholder="What is this regarding?"
+                                aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                required 
+                                placeholder="Your message here..."
+                                rows="6"
+                                aria-required="true"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input 
+                                    type="checkbox" 
+                                    name="consent" 
+                                    required
+                                    aria-required="true">
+                                I consent to having this website store my submitted information
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h2>Contact Information</h2>
+                        <ul class="contact-details">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:suleiman.khamis@example.com">suleiman.khamis@example.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+255123456789">+255 123 456 789</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <address>
+                                    Dodoma, Tanzania<br>
+                                    East Africa
+                                </address>
+                            </li>
+                        </ul>
+                        
+                        <h3>Connect with Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-card">
+                        <h3>Current Availability</h3>
+                        <p>I'm currently accepting new projects and would love to hear about yours. Let's schedule a call and discuss how I can help you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Suleiman Khamis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html> 

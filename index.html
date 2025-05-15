@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing web development projects and skills">
+    <meta name="keywords" content="web developer, portfolio, HTML5, CSS3, JavaScript, frontend development">
+    <meta name="author" content="Your Name">
+    
+    <title>Portfolio | Home</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p id="greeting"></p>
+                <p class="hero-text">I'm a passionate web developer creating modern and responsive websites.</p>
+                <div class="cta-buttons">
+                    <a href="portfolio.html" class="btn primary">View My Work</a>
+                    <a href="contact.html" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="featured-projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Project cards will be dynamically loaded via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <!-- More skill categories will be added -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Suleiman Khamis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html> 

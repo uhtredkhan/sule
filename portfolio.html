@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View my web development projects and technical work">
+    <meta name="keywords" content="portfolio, web development, projects, coding">
+    <meta name="author" content="Your Name">
+    
+    <title>Portfolio Projects</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="portfolio-page">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p class="portfolio-intro">Here are some of my recent projects. Each one demonstrates different skills and technologies in web development.</p>
+            
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <!-- Project Grid -->
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="E-commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn primary">View Live</a>
+                                <a href="#" class="btn secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive e-commerce platform built with modern web technologies.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn primary">View Live</a>
+                                <a href="#" class="btn secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A productivity application for managing daily tasks and projects.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 3 -->
+                <article class="project-card" data-category="ui">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn primary">View Live</a>
+                                <a href="#" class="btn secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather information display using weather API integration.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- More Projects -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn primary">View Live</a>
+                                <a href="#" class="btn secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website showcasing my work and skills.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 5 -->
+                <article class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/project5.jpg" alt="Blog Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn primary">View Live</a>
+                                <a href="#" class="btn secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Blog Platform</h3>
+                        <p>A full-stack blogging platform with user authentication.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 6 -->
+                <article class="project-card" data-category="ui">
+                    <div class="project-image">
+                        <img src="images/project6.jpg" alt="Restaurant Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn primary">View Live</a>
+                                <a href="#" class="btn secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant Website</h3>
+                        <p>A modern restaurant website with online ordering system.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn secondary">Load More Projects</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Suleiman Khamis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html> 
